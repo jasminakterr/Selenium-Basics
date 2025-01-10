@@ -19,7 +19,9 @@ public class ChromeBrowser {
     @Test
 
     public void openURL() throws InterruptedException {
-        driver.get("https://mvnrepository.com/");
+        driver.get("https://www.w3schools.com/");
+        System.out.println(driver.getTitle());
+        System.out.println(driver.getCurrentUrl());
         Thread.sleep(10000);
     }
     @AfterSuite
